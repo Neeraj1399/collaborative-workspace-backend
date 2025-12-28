@@ -8,8 +8,6 @@ const worker = new Worker(
 
     console.log(`[Worker] Starting job ${job.id} for Project ${projectId}`);
 
-    // SIMULATE CODE EXECUTION (Performance Requirement)
-    // In a real app, this might run in a Docker sandbox
     await new Promise((res) => setTimeout(res, 5000));
 
     console.log(`[Worker] Finished job ${job.id}`);
